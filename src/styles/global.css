@@ -1,0 +1,19 @@
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Quitar subrayado a links */
+a {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+button:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease;
+}
