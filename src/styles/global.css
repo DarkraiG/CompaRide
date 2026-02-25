@@ -1,19 +1,88 @@
-body {
-  background-color: #0f0f0f;
-  color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* =====================
+   TIPOGRAFÍA
+===================== */
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
-/* Quitar subrayado a links */
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  color: var(--gray-dark);
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 32px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+}
+
+/* =====================
+   LINKS
+===================== */
+
 a {
   text-decoration: none;
+  color: var(--blue-primary);
 }
+
+a:hover {
+  color: var(--blue-hover);
+}
+
+/* =====================
+   BOTONES
+===================== */
+
+.btn-primary {
+  background-color: var(--blue-primary);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-hover);
+}
+
+.btn-dark {
+  background-color: var(--black-text);
+  color: white;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #000000;
+}
+
+/* =====================
+   TARJETAS
+===================== */
 
 .card {
   border-radius: 12px;
+  border: 1px solid var(--gray-light);
 }
 
-button:hover {
-  transform: scale(1.02);
-  transition: 0.2s ease;
+/* =====================
+   NAVBAR
+===================== */
+
+.navbar {
+  background-color: var(--black-text) !important;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 700;
 }

@@ -1,0 +1,66 @@
+/* =========================
+   NAVBAR – COMPARIDE
+   ========================= */
+
+.navbar {
+  background-color: #000000 !important; /* Negro puro */
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO / NOMBRE */
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+}
+
+/* CONTENEDOR BOTONES */
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* BOTÓN INICIO (OUTLINE) */
+.navbar .btn-outline-light {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* BOTÓN LOGIN (SÓLIDO) */
+.navbar .btn-light {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.navbar .btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar .btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}

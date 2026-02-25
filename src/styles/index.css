@@ -1,0 +1,120 @@
+/* =====================================================
+   VARIABLES GLOBALES – PALETA DE COLORES Y TIPOGRAFÍA
+   ===================================================== */
+:root {
+  /* COLORES PRINCIPALES */
+  --blue-primary: #0066FF;
+  --blue-hover: #0052CC;
+  --blue-light: #E3F2FD;
+
+  /* COLORES DE ESTADO */
+  --green-success: #00C853;
+  --orange-alert: #FF9800;
+
+  /* ESCALA DE GRISES */
+  --black-text: #1A1A1A;
+  --gray-dark: #333333;
+  --gray-medium: #999999;
+  --gray-light: #CCCCCC;
+  --white: #FFFFFF;
+
+  /* TIPOGRAFÍA */
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* =====================================================
+   RESET BÁSICO
+   ===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   ESTILOS BASE
+   ===================================================== */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--black-text);
+}
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+a {
+  font-weight: 500;
+  color: var(--blue-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue-hover);
+}
+
+/* =====================================================
+   BOTONES BASE
+   ===================================================== */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+/* =====================================================
+   TÍTULOS
+   ===================================================== */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  color: var(--gray-dark);
+}
+
+/* =====================================================
+   RESPONSIVE TIPOGRAFÍA
+   ===================================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}

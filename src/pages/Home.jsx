@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
+import "../styles/index.css";
+
+
 const Home = () => {
   return (
     <div className="container mt-5">
+
+      {/* TÍTULO */}
       <h1 className="text-center fw-bold display-4">
         CompaRide
       </h1>
@@ -9,41 +15,27 @@ const Home = () => {
         Compara precios y tiempos entre Uber, Didi y otros servicios de transporte.
       </p>
 
-      <div className="row mt-5 g-4">
-        <div className="col-md-4">
-          <div className="card bg-dark text-light border-secondary h-100">
-            <div className="card-body text-center">
-              <h4 className="fw-bold">Uber</h4>
-              <p className="text-secondary mt-3">
-                Consulta precios y tiempos estimados.
-              </p>
-            </div>
-          </div>
-        </div>
+      {/* BARRA DE BÚSQUEDA */}
+      <div className="d-flex justify-content-center mt-5">
+        <div
+          className="d-flex align-items-center border rounded-pill px-3 py-2 w-100"
+          style={{ maxWidth: "600px" }}
+        >
+          <input
+            type="text"
+            className="form-control border-0"
+            placeholder="¿A dónde vamos hoy?"
+            style={{ boxShadow: "none" }}
+          />
 
-        <div className="col-md-4">
-          <div className="card bg-dark text-light border-secondary h-100">
-            <div className="card-body text-center">
-              <h4 className="fw-bold">Didi</h4>
-              <p className="text-secondary mt-3">
-                Compara tarifas disponibles.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="card bg-dark text-light border-secondary h-100">
-            <div className="card-body text-center">
-              <h4 className="fw-bold">Más servicios</h4>
-              <p className="text-secondary mt-3">
-                Próximamente más plataformas.
-              </p>
-            </div>
-          </div>
+          <Link to="/comparar" className="btn btn-dark ms-2 rounded-pill">
+            Buscar
+          </Link>
         </div>
       </div>
-    </div>
+      </div>
+
+
   );
 };
 

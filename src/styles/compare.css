@@ -1,0 +1,93 @@
+.compare-container {
+  min-height: 100vh;
+  background-color: var(--white);
+  padding: 40px 20px;
+}
+
+/* TÍTULO */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.route-box {
+  max-width: 520px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.route-box input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--gray-light);
+}
+
+.route-box input:focus {
+  outline: none;
+  border-color: var(--blue-primary);
+}
+
+.route-box button {
+  padding: 12px;
+  background-color: var(--blue-primary);
+  color: white;
+  border: none;
+}
+
+.route-box button:hover {
+  background-color: var(--blue-hover);
+}
+
+/* PLANES */
+.plans {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  width: 280px;
+  border: 1px solid var(--gray-light);
+  padding: 20px;
+  text-align: center;
+}
+
+.plan-card h2 {
+  margin-bottom: 10px;
+}
+
+.plan-card p {
+  margin: 6px 0;
+}
+
+/* PRECIO */
+.plan-card .price {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--black-text);
+}
+
+/* BOTÓN */
+.plan-card button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--black-text);
+  color: #0066FF;
+  border: none;
+}
+
+.plan-card button:hover {
+  background-color: #000000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .plan-card {
+    width: 100%;
+  }
+}

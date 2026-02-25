@@ -1,85 +1,31 @@
+import "../styles/compare.css";
+
 const Compare = () => {
   return (
-    <div className="container mt-5">
-      <h2 className="text-center fw-bold mb-4">
-        Planifica tu viaje
-      </h2>
+    <div className="compare-container">
+      <h1 className="title">Comparar viaje</h1>
 
-      {/* FORMULARIO DE RUTA */}
-      <div className="card bg-dark text-light border-secondary p-4 mb-5">
-        <h5 className="fw-bold mb-3">Ruta del viaje</h5>
-
-        <div className="row">
-          <div className="col-md-6 mb-3">
-            <label className="form-label text-secondary">Origen</label>
-            <input
-              type="text"
-              className="form-control bg-black text-light border-secondary"
-              placeholder="Ej. Centro, Ciudad"
-            />
-          </div>
-
-          <div className="col-md-6 mb-3">
-            <label className="form-label text-secondary">Destino</label>
-            <input
-              type="text"
-              className="form-control bg-black text-light border-secondary"
-              placeholder="Ej. Aeropuerto"
-            />
-          </div>
-        </div>
-
-        <button className="btn btn-light fw-bold mt-2">
-          Buscar viajes
-        </button>
+      {/* FORMULARIO RUTA */}
+      <div className="route-box">
+        <input type="text" placeholder="Origen" />
+        <input type="text" placeholder="Destino" />
+        <button>Buscar opciones</button>
       </div>
 
-      {/* SELECCIÓN DE PLATAFORMA */}
-      <h4 className="fw-bold mb-3">Selecciona una plataforma</h4>
-
-      <div className="row g-4">
-        {/* UBER */}
-        <div className="col-md-6">
-          <div className="card bg-dark text-light border-secondary h-100">
-            <div className="card-body">
-              <h5 className="fw-bold">Uber</h5>
-              <p className="text-secondary">
-                Elige el tipo de servicio
-              </p>
-
-              <select className="form-select bg-black text-light border-secondary mb-3">
-                <option>UberX</option>
-                <option>Uber Comfort</option>
-                <option>Uber Black</option>
-              </select>
-
-              <button className="btn btn-outline-light w-100">
-                Seleccionar Uber
-              </button>
-            </div>
-          </div>
+      {/* PLANES */}
+      <div className="plans">
+        <div className="plan-card">
+          <h2>Uber</h2>
+          <p>Tiempo estimado: 15 min</p>
+          <p>Precio: $120 MXN</p>
+          <button>Seleccionar</button>
         </div>
 
-        {/* DIDI */}
-        <div className="col-md-6">
-          <div className="card bg-dark text-light border-secondary h-100">
-            <div className="card-body">
-              <h5 className="fw-bold">Didi</h5>
-              <p className="text-secondary">
-                Elige el tipo de servicio
-              </p>
-
-              <select className="form-select bg-black text-light border-secondary mb-3">
-                <option>Didi Express</option>
-                <option>Didi Confort</option>
-                <option>Didi Premium</option>
-              </select>
-
-              <button className="btn btn-outline-light w-100">
-                Seleccionar Didi
-              </button>
-            </div>
-          </div>
+        <div className="plan-card">
+          <h2>Didi</h2>
+          <p>Tiempo estimado: 18 min</p>
+          <p>Precio: $105 MXN</p>
+          <button>Seleccionar</button>
         </div>
       </div>
     </div>
